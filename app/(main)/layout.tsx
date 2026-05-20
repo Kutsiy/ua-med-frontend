@@ -36,6 +36,7 @@ export default function RootLayout({
         geistMono.variable,
         "font-sans",
         notoSans.variable,
+        "dark",
       )}
     >
       <body className="min-h-full flex flex-col">

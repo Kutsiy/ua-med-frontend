@@ -632,3 +632,7 @@
     @apply font-sans;
   }
 }
+
+.main-gap {
+  @apply container mx-auto px-28;
+}

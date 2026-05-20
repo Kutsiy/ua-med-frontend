@@ -1,3 +1,15 @@
+import style from "./header.module.css";
+
 export function Header() {
-  return <div>HEADER:</div>;
+  return (
+    <header className={`${style.header} main-gap`}>
+      <div className="text-3xl font-bold">Ua Med</div>
+      <nav>
+        <div>
+          <div>Catalog</div>
+        </div>
+        <div></div>
+      </nav>
+    </header>
+  );
 }
