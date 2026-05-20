@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Noto_Sans } from "next/font/google";
 import "@/src/app/styles/globals.css";
 import { cn } from "@/src/shared/lib/utils";
 import { Header } from "@/src/widgets/header";
+import { NextIntlClientProvider } from "next-intl";
 
 const notoSans = Noto_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -40,8 +41,10 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
-        <Header />
-        <main>{children}</main>
+        <NextIntlClientProvider>
+          <Header />
+          <main>{children}</main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
