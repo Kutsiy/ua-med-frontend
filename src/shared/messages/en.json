@@ -2,5 +2,12 @@
   "Header": {
     "catalog": "Catalog",
     "services": "Services"
+  },
+  "LocalSwitcher": {
+    "label": "Label",
+    "locale": "{locale, select, uk {Ukraine} en {English} other {Unknown}}"
+  },
+  "LocaleLayout": {
+    "title": "exemple"
   }
 }

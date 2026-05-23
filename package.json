@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest"
+    "test-vit": "vitest",
+    "text-pw": "npx playwright test"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.44.0",

@@ -13,6 +13,23 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          name: "next/link",
+          message: "Please import from '@/src/shared' instead.",
+          importNames: ["default"],
+        },
+        {
+          name: "next/navigation",
+          message: "Please import from '@/src/shared' instead.",
+          importNames: ["default", "permanentRedirect", "userRouter"],
+        },
+      ],
+    },
+  },
 ]);
 
 export default eslintConfig;
