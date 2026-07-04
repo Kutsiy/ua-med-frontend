@@ -25,9 +25,10 @@ export function LocalSwitcherSelect({ children, defaultValue, label }: Props) {
   }
 
   return (
-    <label>
+    <label className="w-full flex gap-4 items-center">
       <p>{label}</p>
       <select
+        className="bg-accent"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}

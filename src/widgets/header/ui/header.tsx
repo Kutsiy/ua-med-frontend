@@ -8,15 +8,15 @@ export async function Header() {
   return (
     <header className={`${style.header} main-gap`}>
       <div className="text-3xl font-bold">Ua Med</div>
-      <nav className="flex gap-4">
+      <nav className="flex gap-4 items-center">
         <div>
           <div>{t("catalog")}</div>
           <div></div>
         </div>
         <div>
-          <span className="flex gap-4 *:cursor-pointer">
+          <div className="w-[700px] *:cursor-pointer ">
             <LocalSwitcher />
-          </span>
+          </div>
         </div>
       </nav>
     </header>

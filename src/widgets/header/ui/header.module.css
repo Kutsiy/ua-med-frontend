@@ -1,5 +1,5 @@
 @reference "#globals.css";
 
 .header {
-  @apply bg-primary max-h-[60px] py-2 flex items-center text-2xl;
+  @apply w-full bg-primary max-h-[60px] py-2 flex items-center text-2xl gap-4;
 }

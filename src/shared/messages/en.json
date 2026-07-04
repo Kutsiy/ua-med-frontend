@@ -8,6 +8,6 @@
     "locale": "{locale, select, uk {Ukraine} en {English} other {Unknown}}"
   },
   "LocaleLayout": {
-    "title": "exemple"
+    "title": "UaMed"
   }
 }
