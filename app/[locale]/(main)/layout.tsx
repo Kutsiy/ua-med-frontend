@@ -30,8 +30,9 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: Omit<Props, "children">): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "LocaleLayout" });
   return {
     title: t("title"),
