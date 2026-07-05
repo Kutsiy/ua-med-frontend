@@ -7,7 +7,7 @@ import { ChangeEvent, useTransition } from "react";
 type Props = {
   children: React.ReactNode;
   defaultValue: string;
-  label: string;
+  label?: string;
 };
 
 export function LocalSwitcherSelect({ children, defaultValue, label }: Props) {
@@ -26,7 +26,7 @@ export function LocalSwitcherSelect({ children, defaultValue, label }: Props) {
 
   return (
     <label className="w-full flex gap-4 items-center">
-      <p>{label}</p>
+      {label && <p>{label}</p>}
       <select
         className="bg-accent"
         defaultValue={defaultValue}
