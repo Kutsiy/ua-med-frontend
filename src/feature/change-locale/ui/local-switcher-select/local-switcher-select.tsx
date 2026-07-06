@@ -1,8 +1,9 @@
 "use client";
 
 import { useRouter, usePathname } from "@/src/shared/config";
+import { Select, SelectTrigger, SelectValue } from "@/src/shared/ui/select";
 import { useParams } from "next/navigation";
-import { ChangeEvent, useTransition } from "react";
+import { useTransition } from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -16,8 +17,7 @@ export function LocalSwitcherSelect({ children, defaultValue, label }: Props) {
   const pathname = usePathname();
   const params = useParams();
 
-  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value;
+  function onSelectChange(nextLocale: string) {
     startTransition(() => {
       // @ts-expect-error not defined param "params"
       router.replace({ pathname, params }, { locale: nextLocale });
@@ -27,14 +27,16 @@ export function LocalSwitcherSelect({ children, defaultValue, label }: Props) {
   return (
     <label className="w-full flex gap-4 items-center">
       {label && <p>{label}</p>}
-      <select
-        className="bg-accent"
+      <Select
         defaultValue={defaultValue}
         disabled={isPending}
-        onChange={onSelectChange}
+        onValueChange={onSelectChange}
       >
+        <SelectTrigger className="w-full max-w-48">
+          <SelectValue />
+        </SelectTrigger>
         {children}
-      </select>
+      </Select>
     </label>
   );
 }
