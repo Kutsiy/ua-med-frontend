@@ -6,8 +6,8 @@ type Props = {
 
 export function Logo({ children }: Props) {
   return (
-    <div className="text-3xl flex gap-2 items-center font-bold">
+    <button className="text-3xl flex gap-2 items-center font-bold">
       <HeartPlus size={32} strokeWidth={2} /> {children}
-    </div>
+    </button>
   );
 }

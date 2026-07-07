@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import style from "./header.module.css";
-import { LocalSwitcher } from "@/src/feature/change-locale/ui/local-switcher/local-switcher";
+import { LocalSwitcher, ChooseCity } from "@/src/feature";
 import { User } from "lucide-react";
 import { Button, Logo, ShoppingCart } from "@/src/shared/ui";
 
@@ -24,7 +24,7 @@ export async function Header() {
         </div>
 
         <div className="h-10 flex gap-4 items-center">
-          <div>Одесса</div>
+          <ChooseCity />
 
           <div className="cursor-pointer">
             <ShoppingCart amount={0} />
