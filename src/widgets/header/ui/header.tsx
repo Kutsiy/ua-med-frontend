@@ -1,11 +1,11 @@
-import { getTranslations } from "next-intl/server";
-import style from "./header.module.css";
-import { LocalSwitcher, ChooseCity } from "@/src/feature";
-import { User } from "lucide-react";
-import { Button, Logo, ShoppingCart } from "@/src/shared/ui";
+import { getTranslations } from 'next-intl/server'
+import style from './header.module.css'
+import { LocalSwitcher, ChooseCity } from '@/src/feature'
+import { User } from 'lucide-react'
+import { Button, Logo, ShoppingCart } from '@/src/shared/ui'
 
 export async function Header() {
-  const t = await getTranslations("Header");
+  const t = await getTranslations('Header')
 
   return (
     <header className={`${style.header} main-container`}>
@@ -13,7 +13,7 @@ export async function Header() {
       <nav className="h-full flex-1 flex justify-between items-center">
         <div className="h-10 flex gap-4 items-center">
           <div>
-            <Button>{t("catalog")}</Button>
+            <Button>{t('catalog')}</Button>
             <div></div>
           </div>
           <div>
@@ -41,5 +41,5 @@ export async function Header() {
         </div>
       </nav>
     </header>
-  );
+  )
 }
