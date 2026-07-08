@@ -1,14 +1,14 @@
-'use client'
+'use client';
 
-import { Button } from '@/src/shared'
-import { User } from 'lucide-react'
-import { useState } from 'react'
+import { Button } from '@/src/shared';
+import { User } from 'lucide-react';
+import { useState } from 'react';
 
 export function AuthButtons() {
-  const [isAuth, setAuth] = useState(false)
+  const [isAuth, setAuth] = useState(false);
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="lg:flex items-center gap-2 hidden">
       {!isAuth ? (
         <>
           <Button>
@@ -24,5 +24,5 @@ export function AuthButtons() {
         </Button>
       )}
     </div>
-  )
+  );
 }

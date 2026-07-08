@@ -1,1 +1,1 @@
-export * from "./choose-city";
+export * from './choose-city';
