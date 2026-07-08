@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import style from './header.module.css'
-import { LocalSwitcher, ChooseCity } from '@/src/feature'
-import { User } from 'lucide-react'
+import { LocalSwitcher, ChooseCity, AuthButtons } from '@/src/feature'
 import { Button, Logo, ShoppingCart } from '@/src/shared/ui'
 
 export async function Header() {
@@ -25,19 +24,10 @@ export async function Header() {
 
         <div className="h-10 flex gap-4 items-center">
           <ChooseCity />
-
           <div className="cursor-pointer">
             <ShoppingCart amount={0} />
           </div>
-
-          <div className="flex items-center gap-2">
-            <Button>
-              <User />
-              Увійти
-            </Button>
-
-            <Button variant="ghost">Зареєструватись</Button>
-          </div>
+          <AuthButtons />
         </div>
       </nav>
     </header>
