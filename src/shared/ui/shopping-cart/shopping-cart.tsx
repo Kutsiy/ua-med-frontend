@@ -1,8 +1,8 @@
-import { ShoppingCart as Cart } from 'lucide-react'
+import { ShoppingCart as Cart } from 'lucide-react';
 
 type Props = {
-  amount: number
-}
+  amount: number;
+};
 
 export function ShoppingCart({ amount = 0 }: Props) {
   return (
@@ -12,5 +12,5 @@ export function ShoppingCart({ amount = 0 }: Props) {
       </div>
       <Cart size={30} />
     </div>
-  )
+  );
 }
