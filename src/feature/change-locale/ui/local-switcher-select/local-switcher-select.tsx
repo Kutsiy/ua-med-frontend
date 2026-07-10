@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useRouter, usePathname } from "@/src/shared/config";
-import { Select, SelectTrigger, SelectValue } from "@/src/shared/ui/select";
-import { useParams } from "next/navigation";
-import { useTransition } from "react";
+import { useRouter, usePathname } from '@/src/shared/configs';
+import { Select, SelectTrigger, SelectValue } from '@/src/shared/ui/select';
+import { useParams } from 'next/navigation';
+import { useTransition } from 'react';
 
 type Props = {
   children: React.ReactNode;
@@ -27,11 +27,7 @@ export function LocalSwitcherSelect({ children, defaultValue, label }: Props) {
   return (
     <label className="w-full flex gap-4 items-center">
       {label && <p>{label}</p>}
-      <Select
-        defaultValue={defaultValue}
-        disabled={isPending}
-        onValueChange={onSelectChange}
-      >
+      <Select defaultValue={defaultValue} disabled={isPending} onValueChange={onSelectChange}>
         <SelectTrigger className="w-full max-w-48">
           <SelectValue />
         </SelectTrigger>
