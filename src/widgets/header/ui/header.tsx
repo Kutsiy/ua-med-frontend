@@ -11,7 +11,7 @@ export async function Header() {
     <div className={`${style.header}`}>
       <header className="main-container h-full flex items-center gap-6 py-1">
         <Logo>Ua Med</Logo>
-        <nav className="h-full flex-1 flex justify-between items-center">
+        <div className="h-full flex justify-between items-center flex-1">
           <div className="h-10 flex gap-4 items-center">
             <div className="flex gap-2 items-center">
               <Button>
@@ -35,7 +35,7 @@ export async function Header() {
             </div>
             <AuthButtons />
           </div>
-        </nav>
+        </div>
       </header>
     </div>
   );

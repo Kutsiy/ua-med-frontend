@@ -14,7 +14,7 @@ export function ChooseCity() {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="flex gap-2 items-center">
+        <div className="h-10 flex gap-2 items-center hover:bg-muted px-2 py-1.5 rounded-lg">
           <Building /> Одесса
         </div>
       </DialogTrigger>
@@ -32,7 +32,7 @@ export function ChooseCity() {
         </DialogHeader>
 
         <div className="flex flex-col gap-4 py-2">
-          <div className="flex flex-col gap- border-b border-primary">
+          <div className="flex flex-col gap-2 border-b border-primary">
             <ChooseCityInput />
             <Badge variant="clickable" className="my-2">
               Одесса

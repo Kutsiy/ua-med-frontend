@@ -16,7 +16,7 @@ export function AuthButtons() {
             Увійти
           </Button>
 
-          <Button variant="ghost">Зареєструватись</Button>
+          <Button variant="outline">Зареєструватись</Button>
         </>
       ) : (
         <Button>
