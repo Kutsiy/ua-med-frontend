@@ -1,10 +1,10 @@
-import { useLocale, useTranslations } from "next-intl";
-import { LocalSwitcherSelect } from "../local-switcher-select";
-import { locales } from "@/src/shared/config";
-import { SelectContent, SelectGroup, SelectItem } from "@/src/shared/ui/select";
+import { useLocale, useTranslations } from 'next-intl';
+import { LocalSwitcherSelect } from '../local-switcher-select';
+import { locales } from '@/src/shared/configs';
+import { SelectContent, SelectGroup, SelectItem } from '@/src/shared/ui/select';
 
 export function LocalSwitcher({ label }: { label?: string }) {
-  const t = useTranslations("LocalSwitcher");
+  const t = useTranslations('LocalSwitcher');
   const locale = useLocale();
 
   return (
@@ -14,7 +14,7 @@ export function LocalSwitcher({ label }: { label?: string }) {
           {locales.map((val) => {
             return (
               <SelectItem key={val} value={val}>
-                {t("locale", { locale: val })}
+                {t('locale', { locale: val })}
               </SelectItem>
             );
           })}
