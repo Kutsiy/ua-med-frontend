@@ -1,3 +1,3 @@
-export * from './change-locale'
-export * from './choose-city'
-export * from './auth'
+export * from './change-locale';
+export * from './choose-city';
+export * from './auth';

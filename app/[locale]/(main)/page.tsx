@@ -1,3 +1,5 @@
+import { Main } from '@/src/pages';
+
 export default function Page() {
-  return <div></div>;
+  return <Main />;
 }

@@ -1,2 +1,2 @@
-export * from "./local-switcher";
-export * from "./local-switcher-select";
+export * from './local-switcher';
+export * from './local-switcher-select';

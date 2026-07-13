@@ -377,23 +377,11 @@
 
   --gradient-brand: linear-gradient(135deg, var(--brand-500), var(--brand-700));
 
-  --gradient-soft: linear-gradient(
-    135deg,
-    oklch(0.979 0.021 166.113),
-    oklch(1 0 0)
-  );
+  --gradient-soft: linear-gradient(135deg, oklch(0.979 0.021 166.113), oklch(1 0 0));
 
   --gradient-hero:
-    radial-gradient(
-      circle at top left,
-      oklch(0.895 0.073 164.89 / 55%),
-      transparent 32rem
-    ),
-    radial-gradient(
-      circle at bottom right,
-      oklch(0.596 0.145 163.225 / 18%),
-      transparent 28rem
-    ),
+    radial-gradient(circle at top left, oklch(0.895 0.073 164.89 / 55%), transparent 32rem),
+    radial-gradient(circle at bottom right, oklch(0.596 0.145 163.225 / 18%), transparent 28rem),
     oklch(1 0 0);
 }
 
@@ -597,23 +585,11 @@
 
   --gradient-brand: linear-gradient(135deg, var(--brand-500), var(--brand-800));
 
-  --gradient-soft: linear-gradient(
-    135deg,
-    oklch(0.262 0.051 172.552 / 40%),
-    oklch(0.145 0 0)
-  );
+  --gradient-soft: linear-gradient(135deg, oklch(0.262 0.051 172.552 / 40%), oklch(0.145 0 0));
 
   --gradient-hero:
-    radial-gradient(
-      circle at top left,
-      oklch(0.596 0.145 163.225 / 24%),
-      transparent 34rem
-    ),
-    radial-gradient(
-      circle at bottom right,
-      oklch(0.696 0.17 162.48 / 14%),
-      transparent 30rem
-    ),
+    radial-gradient(circle at top left, oklch(0.596 0.145 163.225 / 24%), transparent 34rem),
+    radial-gradient(circle at bottom right, oklch(0.696 0.17 162.48 / 14%), transparent 30rem),
     oklch(0.145 0 0);
 }
 
