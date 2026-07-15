@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './src/shared/configs/i18n/routing';
+import { routing } from './src/shared/config/i18n/routing';
 
 export default createMiddleware(routing);
 

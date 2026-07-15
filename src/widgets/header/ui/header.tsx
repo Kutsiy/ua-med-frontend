@@ -1,11 +1,13 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import style from './header.module.css';
 import { LocalSwitcher, ChooseCity, AuthButtons } from '@/src/feature';
 import { Button, Logo, ShoppingCart } from '@/src/shared/ui';
 import { ChevronDown, ClipboardList } from 'lucide-react';
 
-export async function Header() {
-  const t = await getTranslations('Header');
+export function Header() {
+  const t = useTranslations('Header');
 
   return (
     <div className={`${style.header}`}>
@@ -18,7 +20,7 @@ export async function Header() {
                 <ClipboardList /> {t('catalog')}
               </Button>
               <Button>
-                <ChevronDown /> Services
+                <ChevronDown /> {t('services')}
               </Button>
             </div>
             <div>

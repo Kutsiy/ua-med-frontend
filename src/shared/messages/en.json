@@ -1,7 +1,14 @@
 {
   "Header": {
     "catalog": "Catalog",
-    "services": "Services"
+    "services": "Services",
+    "login": "Log in",
+    "register": "Sign up",
+    "city": "Odesa"
+  },
+  "Search": {
+    "placeholder": "Name of medicines, clinics or services",
+    "button": "Search"
   },
   "LocalSwitcher": {
     "label": "Label",
@@ -9,5 +16,12 @@
   },
   "LocaleLayout": {
     "title": "UaMed"
+  },
+  "Hero": {
+    "stats": "Over 6,000 pharmacies and 12,000 doctors in Ukraine",
+    "title": "Find medicines or a pharmacy nearby",
+    "subtitle": "Compare prices, check availability and book online",
+    "badgeMedicines": "Medicines",
+    "badgePharmacies": "Pharmacies"
   }
 }

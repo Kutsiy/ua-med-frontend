@@ -1,13 +1,27 @@
 {
   "Header": {
-    "catalog": "Каталог",
-    "services": "Сервіси"
-  },
+  "catalog": "Каталог",
+  "services": "Послуги",
+  "login": "Увійти",
+  "register": "Зареєструватись",
+  "city": "Одеса"
+},
+"Search": {
+  "placeholder": "Назва ліків, клінік або послуг",
+  "button": "Знайти"
+},
   "LocalSwitcher": {
-    "label": "Лейбл",
-    "locale": "{locale, select, uk {Українська} en {Англійська} other {Невідомо}}"
+    "label": "Label",
+    "locale": "{locale, select, uk {Українська} en {English} other {Unknown}}"
   },
   "LocaleLayout": {
     "title": "UaMed"
+  },
+  "Hero": {
+    "stats": "Понад 6 000 аптек та 12 000 лікарів по Україні",
+    "title": "Знайдіть ліки або аптеку поруч",
+    "subtitle": "Порівнюйте ціни, перевіряйте наявність і бронюйте онлайн",
+    "badgeMedicines": "Ліки",
+    "badgePharmacies": "Аптеки"
   }
 }
