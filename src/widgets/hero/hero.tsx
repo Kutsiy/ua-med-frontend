@@ -19,8 +19,8 @@ export function Hero() {
 ];
 
   return (
-    <section className="relation w-full min-h-[450px] bg-secondary/30 flex flex-col items-center justify-center">
-      <div className="absolute h-[500px] top-[-350px] w-full bg-radial from-primary/85 to-primary/20 rounded-full z-1 blur-2xl"></div>
+    <section className="relative w-full min-h-[450px] bg-secondary/30 flex flex-col items-center justify-center">
+      <div className="pointer-events-none absolute h-[500px] top-[-350px] w-full bg-radial from-primary/85 to-primary/20 rounded-full z-1 blur-2xl"></div>
       <div className="main-container flex flex-col gap-4 items-center justify-center z-10">
         <div className="px-2 p-1.5 rounded-lg bg-background">
           {t('stats')}
