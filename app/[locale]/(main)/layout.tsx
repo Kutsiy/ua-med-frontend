@@ -21,9 +21,11 @@ const geistMono = Geist_Mono({
 });
 
 type Props = {
-  children: React.ReactElement;
-  params: { locale: string };
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 };
+
+
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

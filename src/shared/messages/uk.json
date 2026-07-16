@@ -22,6 +22,48 @@
     "title": "Знайдіть ліки або аптеку поруч",
     "subtitle": "Порівнюйте ціни, перевіряйте наявність і бронюйте онлайн",
     "badgeMedicines": "Ліки",
-    "badgePharmacies": "Аптеки"
+    "badgePharmacies": "Аптеки",
+    "badgeDoctors": "Лікарі",
+    "badgeClinics": "Клініки",
+    "badgeServices": "Послуги"
+  },
+  "PopularSearches": {
+    "title": "Популярні запити",
+    "chips": {
+      "nurofen": "Нурофен",
+      "paracetamol": "Парацетамол",
+      "familyDoctor": "Сімейний лікар",
+      "dentist": "Стоматолог",
+      "cardiologist": "Кардіолог",
+      "tests": "Аналізи",
+      "vitaminD": "Вітамін D",
+      "ultrasound": "УЗД"
+    }
+  },
+  "MedicinePreview": {
+    "title": "Наявність ліків",
+    "subtitle": "Порівняйте ціни в аптеках вашого міста",
+    "allMedicines": "Усі ліки",
+    "from": "від",
+    "pharmacies": "{count} аптек",
+    "findInPharmacies": "Знайти в аптеках",
+    "medicines": {
+      "nurofen": {
+        "name": "Нурофен",
+        "form": "Таблетки, 200 мг, №24"
+      },
+      "paracetamol": {
+        "name": "Парацетамол",
+        "form": "Таблетки, 500 мг, №10"
+      },
+      "amoxil": {
+        "name": "Амоксил",
+        "form": "Капсули, 500 мг, №20"
+      },
+      "vitaminD3": {
+        "name": "Вітамін D3",
+        "form": "Краплі, 4000 МО, 10 мл"
+      }
+    }
   }
 }
