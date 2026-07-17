@@ -2,7 +2,7 @@
 
 import { Pill, Store } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { SectionHeader } from '@/src/shared/ui';
+import { Button, SectionHeader } from '@/src/shared/ui';
 
 const medicines = [
   {
@@ -67,9 +67,13 @@ export function MedicinePreview() {
               </span>
             </div>
 
-            <button className="mt-4 inline-flex h-9 w-full items-center justify-center rounded-lg border border-border bg-transparent text-sm font-medium text-foreground transition-all duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary">
+            <Button
+              variant="default"
+              size="sm"
+              className="mt-4 w-full cursor-pointer"
+            >
               {t('findInPharmacies')}
-            </button>
+            </Button>
           </article>
         ))}
       </div>
