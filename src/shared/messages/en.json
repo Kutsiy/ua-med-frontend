@@ -1,7 +1,14 @@
 {
   "Header": {
     "catalog": "Catalog",
-    "services": "Services"
+    "services": "Services",
+    "login": "Log in",
+    "register": "Sign up",
+    "city": "Odesa"
+  },
+  "Search": {
+    "placeholder": "Name of medicines, clinics or services",
+    "button": "Search"
   },
   "LocalSwitcher": {
     "label": "Label",
@@ -9,5 +16,54 @@
   },
   "LocaleLayout": {
     "title": "UaMed"
+  },
+  "Hero": {
+    "stats": "Over 6,000 pharmacies and 12,000 doctors in Ukraine",
+    "title": "Find medicines or a pharmacy nearby",
+    "subtitle": "Compare prices, check availability and book online",
+    "badgeMedicines": "Medicines",
+    "badgePharmacies": "Pharmacies",
+    "badgeDoctors": "Doctors",
+    "badgeClinics": "Clinics",
+    "badgeServices": "Services"
+  },
+  "PopularSearches": {
+    "title": "Popular queries",
+    "chips": {
+      "nurofen": "Nurofen",
+      "paracetamol": "Paracetamol",
+      "familyDoctor": "Family Doctor",
+      "dentist": "Dentist",
+      "cardiologist": "Cardiologist",
+      "tests": "Tests",
+      "vitaminD": "Vitamin D",
+      "ultrasound": "Ultrasound"
+    }
+  },
+  "MedicinePreview": {
+    "title": "Medicine Availability",
+    "subtitle": "Compare prices in pharmacies of your city",
+    "allMedicines": "All medicines",
+    "from": "from",
+    "pharmacies": "{count} pharmacies",
+    "findInPharmacies": "Find in pharmacies",
+    "medicines": {
+      "nurofen": {
+        "name": "Nurofen",
+        "form": "Tablets, 200 mg, No. 24"
+      },
+      "paracetamol": {
+        "name": "Paracetamol",
+        "form": "Tablets, 500 mg, No. 10"
+      },
+      "amoxil": {
+        "name": "Amoxil",
+        "form": "Capsules, 500 mg, No. 20"
+      },
+      "vitaminD3": {
+        "name": "Vitamin D3",
+        "form": "Drops, 4000 IU, 10 ml"
+      }
+    }
   }
 }

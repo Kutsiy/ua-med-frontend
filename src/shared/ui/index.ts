@@ -4,3 +4,5 @@ export * from './shopping-cart';
 export * from './dialog';
 export * from './input';
 export * from './badge';
+export * from './section-header/section-header';
+
