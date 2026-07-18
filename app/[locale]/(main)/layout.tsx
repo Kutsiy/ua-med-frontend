@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Noto_Sans } from 'next/font/google';
 import '@/src/app/styles/globals.css';
 import { cn } from '@/src/shared/libs/utils';
-import { Header } from '@/src/widgets/header';
+import { Header, Footer } from '@/src/widgets';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -63,7 +63,8 @@ export default async function RootLayout({ children, params }: Props) {
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main>{children}</main>
+          <main className="flex-1">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

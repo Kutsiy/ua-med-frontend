@@ -146,5 +146,26 @@
         "text": "Pick up your order or visit a doctor at your convenience."
       }
     }
+  },
+  "Footer": {
+    "description": "Ua Med is a platform for finding medicines, pharmacies, doctors, and clinics throughout Ukraine. Compare prices, check availability, and book online.",
+    "phone": "0 800 00 00 00",
+    "email": "support@uamed.ua",
+    "location": "Kyiv, Ukraine",
+    "rights": "© {year} Ua Med. All rights reserved.",
+    "columns": {
+      "services": {
+        "title": "Services",
+        "links": ["Find Medicines", "Pharmacies", "Doctors", "Clinics", "Online Booking"]
+      },
+      "company": {
+        "title": "Company",
+        "links": ["About Ua Med", "For Partners", "Careers", "Blog", "Contacts"]
+      },
+      "help": {
+        "title": "Help",
+        "links": ["How it Works", "FAQ", "Terms of Use", "Privacy Policy"]
+      }
+    }
   }
 }
