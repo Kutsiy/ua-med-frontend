@@ -124,5 +124,27 @@
         "initials": "IS"
       }
     }
+  },
+  "HowItWorks": {
+    "title": "How it works",
+    "subtitle": "Four simple steps to get the medical care you need",
+    "steps": {
+      "find": {
+        "title": "Find",
+        "text": "Enter the name of the medicine, doctor, clinic or service in your city."
+      },
+      "compare": {
+        "title": "Compare",
+        "text": "Compare prices, availability, ratings and reviews in one place."
+      },
+      "book": {
+        "title": "Book or make an appointment",
+        "text": "Reserve medicines in a pharmacy or book an appointment online."
+      },
+      "receive": {
+        "title": "Get the service",
+        "text": "Pick up your order or visit a doctor at your convenience."
+      }
+    }
   }
 }
