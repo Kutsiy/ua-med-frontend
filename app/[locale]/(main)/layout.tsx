@@ -6,7 +6,7 @@ import { Header } from '@/src/widgets/header';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing, locales } from '@/src/shared/configs';
+import { routing, locales } from '@/src/shared/config';
 
 const notoSans = Noto_Sans({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -21,9 +21,11 @@ const geistMono = Geist_Mono({
 });
 
 type Props = {
-  children: React.ReactElement;
-  params: { locale: string };
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 };
+
+
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

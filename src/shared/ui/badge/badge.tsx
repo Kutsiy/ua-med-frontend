@@ -5,7 +5,7 @@ import { Slot } from 'radix-ui';
 import { cn } from '@/src/shared/libs/utils/index';
 
 const badgeVariants = cva(
-  'group/badge inline-flex h-auto w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2.5 py-1.5 text-base font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3!',
+  'group/badge inline-flex h-auto w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2.5 py-1.5 text-base font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3',
   {
     variants: {
       variant: {
@@ -17,8 +17,7 @@ const badgeVariants = cva(
         ghost: 'hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50',
         link: 'text-primary underline-offset-4 hover:underline',
         clickable: 'bg-primary text-primary-foreground hover:bg-primary/80 cursor-pointer',
-        darker:
-          'bg-background text-primary-foreground border border-border hover:bg-background/150 hover:border-border/90 cursor-pointer',
+        darker: 'bg-background text-primary-foreground border border-border hover:bg-background/150 hover:border-border/90 cursor-pointer',
       },
     },
     defaultVariants: {

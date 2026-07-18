@@ -1,5 +1,15 @@
-import { Main } from '@/src/pages';
+import { Hero, PopularSearches, MedicinePreview, NearbyPharmacies } from '@/src/widgets';
 
 export default function Page() {
-  return <Main />;
+  return (
+    <>
+      <Hero />
+      <PopularSearches />
+      <MedicinePreview />
+      <NearbyPharmacies />
+    </>
+  );
 }
+
+
+
