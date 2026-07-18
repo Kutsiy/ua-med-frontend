@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from '@/src/shared/config';
+import { Link } from '@/src/shared/configs';
 import { cn } from '@/src/shared/libs/utils';
 
 export interface SectionHeaderProps extends React.HTMLAttributes<HTMLDivElement> {

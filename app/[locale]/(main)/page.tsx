@@ -1,4 +1,4 @@
-import { Hero, PopularSearches, MedicinePreview, NearbyPharmacies } from '@/src/widgets';
+import { Hero, PopularSearches, MedicinePreview, NearbyPharmacies, DoctorsToday } from '@/src/widgets';
 
 export default function Page() {
   return (
@@ -7,9 +7,11 @@ export default function Page() {
       <PopularSearches />
       <MedicinePreview />
       <NearbyPharmacies />
+      <DoctorsToday />
     </>
   );
 }
+
 
 
 

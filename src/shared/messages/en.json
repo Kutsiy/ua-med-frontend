@@ -93,5 +93,36 @@
         "distance": "1.3 km"
       }
     }
+  },
+  "DoctorsToday": {
+    "title": "Doctors Available Today",
+    "subtitle": "Book an appointment online in a few clicks",
+    "allDoctors": "All doctors",
+    "reviews": "({count} reviews)",
+    "todayAt": "Today, {time}",
+    "book": "Book now",
+    "doctorsList": {
+      "olena": {
+        "name": "Olena Kovalchuk",
+        "specialty": "Family Doctor",
+        "experience": "12 years of experience",
+        "clinic": "Medical Center \"Oberig\"",
+        "initials": "OK"
+      },
+      "andriy": {
+        "name": "Andriy Melnyk",
+        "specialty": "Cardiologist",
+        "experience": "18 years of experience",
+        "clinic": "Clinic \"Dobrobut\"",
+        "initials": "AM"
+      },
+      "iryna": {
+        "name": "Iryna Shevchenko",
+        "specialty": "Dentist",
+        "experience": "9 years of experience",
+        "clinic": "Dentistry \"Lumi-Dent\"",
+        "initials": "IS"
+      }
+    }
   }
 }

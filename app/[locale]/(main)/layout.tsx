@@ -6,7 +6,7 @@ import { Header } from '@/src/widgets/header';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing, locales } from '@/src/shared/config';
+import { routing, locales } from '@/src/shared/configs';
 
 const notoSans = Noto_Sans({ subsets: ['latin'], variable: '--font-sans' });
 

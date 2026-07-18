@@ -27,7 +27,7 @@ export function NearbyPharmacies() {
 
   return (
     <section id="pharmacies" className="bg-muted/30 py-10">
-      <div className="main-container">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeader
           title={t('title')}
           subtitle={t('subtitle')}

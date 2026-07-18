@@ -1,6 +1,6 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { LocalSwitcherSelect } from '../local-switcher-select';
-import { locales } from '@/src/shared/config';
+import { locales } from '@/src/shared/configs';
 import { SelectContent, SelectGroup, SelectItem } from '@/src/shared/ui/select';
 
 export function LocalSwitcher({ label }: { label?: string }) {
