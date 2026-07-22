@@ -31,7 +31,7 @@ export function MedicinePreview() {
   const t = useTranslations('MedicinePreview');
 
   return (
-    <section id="medicines" className="main-container py-10">
+    <section id="medicines" className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <SectionHeader
         title={t('title')}
         subtitle={t('subtitle')}

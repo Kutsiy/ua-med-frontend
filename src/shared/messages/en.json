@@ -93,5 +93,79 @@
         "distance": "1.3 km"
       }
     }
+  },
+  "DoctorsToday": {
+    "title": "Doctors Available Today",
+    "subtitle": "Book an appointment online in a few clicks",
+    "allDoctors": "All doctors",
+    "reviews": "({count} reviews)",
+    "todayAt": "Today, {time}",
+    "book": "Book now",
+    "doctorsList": {
+      "olena": {
+        "name": "Olena Kovalchuk",
+        "specialty": "Family Doctor",
+        "experience": "12 years of experience",
+        "clinic": "Medical Center \"Oberig\"",
+        "initials": "OK"
+      },
+      "andriy": {
+        "name": "Andriy Melnyk",
+        "specialty": "Cardiologist",
+        "experience": "18 years of experience",
+        "clinic": "Clinic \"Dobrobut\"",
+        "initials": "AM"
+      },
+      "iryna": {
+        "name": "Iryna Shevchenko",
+        "specialty": "Dentist",
+        "experience": "9 years of experience",
+        "clinic": "Dentistry \"Lumi-Dent\"",
+        "initials": "IS"
+      }
+    }
+  },
+  "HowItWorks": {
+    "title": "How it works",
+    "subtitle": "Four simple steps to get the medical care you need",
+    "steps": {
+      "find": {
+        "title": "Find",
+        "text": "Enter the name of the medicine, doctor, clinic or service in your city."
+      },
+      "compare": {
+        "title": "Compare",
+        "text": "Compare prices, availability, ratings and reviews in one place."
+      },
+      "book": {
+        "title": "Book or make an appointment",
+        "text": "Reserve medicines in a pharmacy or book an appointment online."
+      },
+      "receive": {
+        "title": "Get the service",
+        "text": "Pick up your order or visit a doctor at your convenience."
+      }
+    }
+  },
+  "Footer": {
+    "description": "Ua Med is a platform for finding medicines, pharmacies, doctors, and clinics throughout Ukraine. Compare prices, check availability, and book online.",
+    "phone": "0 800 00 00 00",
+    "email": "support@uamed.ua",
+    "location": "Kyiv, Ukraine",
+    "rights": "© {year} Ua Med. All rights reserved.",
+    "columns": {
+      "services": {
+        "title": "Services",
+        "links": ["Find Medicines", "Pharmacies", "Doctors", "Clinics", "Online Booking"]
+      },
+      "company": {
+        "title": "Company",
+        "links": ["About Ua Med", "For Partners", "Careers", "Blog", "Contacts"]
+      },
+      "help": {
+        "title": "Help",
+        "links": ["How it Works", "FAQ", "Terms of Use", "Privacy Policy"]
+      }
+    }
   }
 }

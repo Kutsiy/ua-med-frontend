@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter, usePathname } from '@/src/shared/config';
+import { useRouter, usePathname } from '@/src/shared/configs';
 import { Select, SelectTrigger, SelectValue } from '@/src/shared/ui/select';
 import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
