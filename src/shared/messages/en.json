@@ -167,5 +167,141 @@
         "links": ["How it Works", "FAQ", "Terms of Use", "Privacy Policy"]
       }
     }
+  },
+  "Catalog": {
+    "title": "Product Catalog",
+    "subtitle": "Compare prices, check availability, and choose specialists in your city",
+    "crumbs": {
+      "home": "Home",
+      "catalog": "Catalog"
+    },
+    "tabs": {
+      "medicines": "Medicines",
+      "doctors": "Doctors"
+    },
+    "filters": "Filters",
+    "activeFilters": "Active filters:",
+    "reset": "Reset",
+    "resetAll": "Reset all",
+    "clearFilters": "Clear filters",
+    "clearSearch": "Clear search",
+    "found": "Found:",
+    "nothingFoundTitle": "Nothing found",
+    "nothingFoundSubtitle": "Try changing your query or reset some filters to expand results.",
+    "showResults": "Show ({count})",
+    "searchFilterPlaceholder": "Search...",
+    "priceFrom": "Price from",
+    "consultationFrom": "Consultation from",
+    "pharmaciesCount": "{count} pharmacies",
+    "outOfStock": "Out of stock",
+    "findInPharmacies": "Find in pharmacies",
+    "book": "Book now",
+    "experienceYears": "{years} years experience",
+    "reviewsCount": "({count} reviews)",
+    "searchQueryLabel": "Search: \"{query}\"",
+    "fromText": "from",
+    "toText": "up to",
+    "search": {
+      "medicines": "Medicine name or active substance...",
+      "doctors": "Doctor name, specialty or clinic..."
+    },
+    "sorts": {
+      "relevance": "By relevance",
+      "popular": "Most popular",
+      "price_asc": "Cheapest first",
+      "price_desc": "Most expensive",
+      "rating": "Highest rating",
+      "nearest": "Nearest",
+      "alphabet": "Alphabetical",
+      "reviews": "Most reviews",
+      "experience": "By experience",
+      "earliest": "Earliest appointment"
+    },
+    "filterLabels": {
+      "category": "Category",
+      "availability": "Availability",
+      "price": "Price",
+      "doctorPrice": "Consultation fee, ₴",
+      "manufacturer": "Manufacturer",
+      "country": "Country of origin",
+      "form": "Dosage form",
+      "dosage": "Dosage",
+      "specialty": "Specialty",
+      "availableToday": "Available today"
+    },
+    "options": {
+      "category": {
+        "all": "All categories",
+        "painkillers": "Painkillers",
+        "antibiotics": "Antibiotics",
+        "vitamins": "Vitamins",
+        "flu": "Cold & Flu",
+        "allergy": "Allergy",
+        "cardiology": "Cardiovascular",
+        "gastro": "Gastroenterology"
+      },
+      "availability": {
+        "all": "All options",
+        "in_stock": "In stock now",
+        "nearby": "Nearby",
+        "bookable": "Bookable",
+        "prescription": "Prescription",
+        "over_counter": "Over-the-counter"
+      },
+      "manufacturer": {
+        "all": "All manufacturers"
+      },
+      "country": {
+        "all": "All countries",
+        "Ukraine": "Ukraine",
+        "Germany": "Germany",
+        "France": "France",
+        "USA": "USA",
+        "India": "India",
+        "UK": "United Kingdom",
+        "Slovenia": "Slovenia"
+      },
+      "form": {
+        "all": "All forms",
+        "tablets": "Tablets",
+        "capsules": "Capsules",
+        "syrup": "Syrup",
+        "injection": "Injections",
+        "cream": "Cream",
+        "gel": "Gel",
+        "spray": "Spray"
+      },
+      "dosage": {
+        "all": "All dosages"
+      },
+      "specialty": {
+        "all": "All specialties",
+        "family": "Family Doctor",
+        "cardio": "Cardiologist",
+        "dentist": "Dentist",
+        "pediatric": "Pediatrician",
+        "neuro": "Neurologist"
+      }
+    },
+    "items": {
+      "medicines": {
+        "nurofen": { "name": "Nurofen Express", "form": "Tablets, 200 mg, No. 24", "category": "Painkillers" },
+        "paracetamol": { "name": "Paracetamol-Darnytsia", "form": "Tablets, 500 mg, No. 10", "category": "Painkillers" },
+        "amoxil": { "name": "Amoxil", "form": "Capsules, 500 mg, No. 20", "category": "Antibiotics" },
+        "vitaminD3": { "name": "Aquadetrim Vitamin D3", "form": "Drops, 4000 IU, 10 ml", "category": "Vitamins" },
+        "analgin": { "name": "Analgin-Zdorovya", "form": "Tablets, 500 mg, No. 10", "category": "Painkillers" },
+        "aspirin": { "name": "Aspirin Cardio", "form": "Tablets, 100 mg, No. 28", "category": "Cardiovascular" },
+        "ascorbic": { "name": "Vitamin C (Ascorbic acid)", "form": "Dragees, 50 mg, No. 50", "category": "Vitamins" },
+        "suprastin": { "name": "Suprastin", "form": "Tablets, 25 mg, No. 20", "category": "Allergy" },
+        "loratadine": { "name": "Loratadine-Zdorovya", "form": "Tablets, 10 mg, No. 10", "category": "Allergy" }
+      },
+      "doctors": {
+        "olena": { "name": "Olena Kovalchuk", "specialty": "Family Doctor", "experience": "12 years experience", "clinic": "Medical Center \"Oberig\"", "time": "Today, 14:30" },
+        "andriy": { "name": "Andriy Melnyk", "specialty": "Cardiologist", "experience": "18 years experience", "clinic": "Clinic \"Dobrobut\"", "time": "Today, 16:00" },
+        "iryna": { "name": "Iryna Shevchenko", "specialty": "Dentist", "experience": "9 years experience", "clinic": "Dentistry \"Lumi-Dent\"", "time": "Today, 17:15" },
+        "maksym": { "name": "Maksym Boiko", "specialty": "Pediatrician", "experience": "11 years experience", "clinic": "Children's Center \"Malyatko\"", "time": "Tomorrow, 10:00" },
+        "tetyana": { "name": "Tetyana Tkachenko", "specialty": "Neurologist", "experience": "15 years experience", "clinic": "Medical Clinic \"Mediker\"", "time": "Today, 18:45" }
+      }
+    }
   }
 }

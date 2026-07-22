@@ -3,6 +3,7 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Logo } from '@/src/shared/ui';
+import { Link } from '@/src/shared/configs';
 
 const colKeys = ['services', 'company', 'help'] as const;
 
@@ -14,7 +15,9 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="grid grid-cols-2 gap-8 lg:grid-cols-5">
           <div className="col-span-2">
-            <Logo>Ua Med</Logo>
+            <Link href="/">
+              <Logo>Ua Med</Logo>
+            </Link>
             <p className="mt-4 max-w-xs text-sm text-footer-foreground">
               {t('description')}
             </p>

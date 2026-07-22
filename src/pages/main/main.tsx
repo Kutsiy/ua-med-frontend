@@ -1,9 +1,9 @@
-import { Hero, MainLayout } from '@/src/widgets';
+import { Hero } from '@/src/widgets';
 
 export function Main() {
   return (
-    <MainLayout>
+    <>
       <Hero />
-    </MainLayout>
+    </>
   );
 }

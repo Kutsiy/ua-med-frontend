@@ -5,6 +5,7 @@ import style from './header.module.css';
 import { LocalSwitcher, ChooseCity, AuthButtons } from '@/src/feature';
 import { Button, Logo, ShoppingCart } from '@/src/shared/ui';
 import { ChevronDown, ClipboardList } from 'lucide-react';
+import { Link } from '@/src/shared/configs';
 
 export function Header() {
   const t = useTranslations('Header');
@@ -12,13 +13,17 @@ export function Header() {
   return (
     <div className={`${style.header}`}>
       <header className="main-container h-full flex items-center gap-6 py-1">
-        <Logo>Ua Med</Logo>
+        <Link href="/">
+          <Logo>Ua Med</Logo>
+        </Link>
         <nav className="h-full flex-1 flex justify-between items-center">
           <div className="h-10 flex gap-4 items-center">
             <div className="flex gap-2 items-center">
-              <Button>
-                <ClipboardList /> {t('catalog')}
-              </Button>
+              <Link href="/catalog">
+                <Button className="cursor-pointer">
+                  <ClipboardList /> {t('catalog')}
+                </Button>
+              </Link>
               <Button>
                 <ChevronDown /> {t('services')}
               </Button>
