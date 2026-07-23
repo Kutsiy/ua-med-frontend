@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, SlidersHorizontal } from 'lucide-react';
+import { X, SlidersHorizontal, RotateCcw } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import FilterPanel from './FilterPanel';
@@ -29,17 +29,15 @@ export default function FilterDrawer({
 
   return (
     <div className="fixed inset-0 z-50 flex lg:hidden">
-      {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
         onClick={() => onOpenChange(false)}
       />
 
-      {/* Drawer */}
       <div className="relative ml-auto flex h-full w-full max-w-xs flex-col bg-background p-6 shadow-xl transition-transform">
         <div className="flex items-center justify-between border-b border-border pb-4">
           <h2 className="flex items-center gap-2 text-lg font-bold text-foreground">
-            <SlidersHorizontal className="size-5 text-primary" />
+            <SlidersHorizontal className="size-5 text-primary-vivid" />
             {t('filters')}
           </h2>
           <button
@@ -59,8 +57,9 @@ export default function FilterDrawer({
             variant="outline"
             size="sm"
             onClick={onClear}
-            className="flex-1 cursor-pointer"
+            className="flex-1 gap-1.5 border-primary-vivid/35 bg-primary-vivid/15 text-primary-vivid hover:bg-primary-vivid/25 hover:border-primary-vivid/50 cursor-pointer"
           >
+            <RotateCcw className="size-3.5" />
             {t('reset')}
           </Button>
           <Button

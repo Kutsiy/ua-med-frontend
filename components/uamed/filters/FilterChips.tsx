@@ -1,7 +1,6 @@
 import React from 'react';
-import { X } from 'lucide-react';
+import { X, RotateCcw } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { Button } from '@/components/ui/button';
 
 interface FilterChipsProps {
   config: any;
@@ -81,14 +80,14 @@ export default function FilterChips({ config, state, update, onClear }: FilterCh
           </button>
         </span>
       ))}
-      <Button
-        variant="ghost"
-        size="xs"
+      <button
+        type="button"
         onClick={onClear}
-        className="text-xs text-primary hover:text-primary/80 cursor-pointer"
+        className="inline-flex items-center gap-1.5 rounded-full border border-primary-vivid/35 bg-primary-vivid/15 px-3 py-1 text-xs font-semibold text-primary-vivid hover:bg-primary-vivid/25 hover:border-primary-vivid/50 transition-all cursor-pointer shadow-xs"
       >
+        <RotateCcw className="size-3" />
         {t('resetAll')}
-      </Button>
+      </button>
     </div>
   );
 }

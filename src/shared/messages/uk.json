@@ -6,6 +6,19 @@
   "register": "Зареєструватись",
   "city": "Одеса"
 },
+  "ChooseCity": {
+    "title": "Оберіть місто",
+    "placeholder": "Вкажіть назву міста/населеного пункту",
+    "cities": {
+      "kyiv": "Київ",
+      "dnipro": "Дніпро",
+      "kropyvnytskyi": "Кропивницький",
+      "odesa": "Одеса",
+      "bilaTserkva": "Біла Церква",
+      "lviv": "Львів",
+      "kharkiv": "Харків"
+    }
+  },
 "Search": {
   "placeholder": "Назва ліків, клінік або послуг",
   "button": "Знайти"
@@ -183,6 +196,8 @@
     "activeFilters": "Активні фільтри:",
     "reset": "Скинути",
     "resetAll": "Скинути все",
+    "showMore": "Показати ще (+{count})",
+    "showLess": "Згорнути",
     "clearFilters": "Скинути фільтри",
     "clearSearch": "Очистити пошук",
     "found": "Знайдено:",

@@ -3,16 +3,18 @@
 import { InputGroup, InputGroupAddon, InputGroupInput } from '@/src/shared/ui/input-group';
 import { X, SearchIcon } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export function ChooseCityInput() {
+  const t = useTranslations('ChooseCity');
   const [value, setValue] = useState('');
 
   return (
     <InputGroup>
       <InputGroupInput
-        onInput={(value) => setValue(value.data)}
+        onInput={(e: any) => setValue(e.target?.value || '')}
         value={value}
-        placeholder="Вкажіть назву міста/населеного пункту"
+        placeholder={t('placeholder')}
       />
       <InputGroupAddon>
         <SearchIcon />

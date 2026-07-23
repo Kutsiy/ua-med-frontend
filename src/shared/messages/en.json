@@ -6,6 +6,19 @@
     "register": "Sign up",
     "city": "Odesa"
   },
+  "ChooseCity": {
+    "title": "Select city",
+    "placeholder": "Enter city/settlement name",
+    "cities": {
+      "kyiv": "Kyiv",
+      "dnipro": "Dnipro",
+      "kropyvnytskyi": "Kropyvnytskyi",
+      "odesa": "Odesa",
+      "bilaTserkva": "Bila Tserkva",
+      "lviv": "Lviv",
+      "kharkiv": "Kharkiv"
+    }
+  },
   "Search": {
     "placeholder": "Name of medicines, clinics or services",
     "button": "Search"
@@ -183,6 +196,8 @@
     "activeFilters": "Active filters:",
     "reset": "Reset",
     "resetAll": "Reset all",
+    "showMore": "Show more (+{count})",
+    "showLess": "Collapse",
     "clearFilters": "Clear filters",
     "clearSearch": "Clear search",
     "found": "Found:",

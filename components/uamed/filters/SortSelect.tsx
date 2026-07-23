@@ -14,7 +14,6 @@ export default function SortSelect({ options, value, onChange }: SortSelectProps
 
   const selectedOption = options.find((opt) => opt.value === value) || options[0];
 
-  // Close on outside click
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
@@ -27,11 +26,10 @@ export default function SortSelect({ options, value, onChange }: SortSelectProps
 
   return (
     <div className="relative inline-block text-left" ref={containerRef}>
-      {/* Trigger Button */}
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex h-12 items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 text-sm font-medium text-foreground shadow-xs transition-colors hover:border-primary/50 cursor-pointer min-w-[200px]"
+        className="inline-flex h-12 items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 text-sm font-medium text-foreground shadow-xs transition-colors hover:border-primary-vivid/50 cursor-pointer min-w-[200px]"
       >
         <span className="flex items-center gap-2">
           <ArrowUpDown className="size-4 text-text-muted" />
@@ -40,7 +38,6 @@ export default function SortSelect({ options, value, onChange }: SortSelectProps
         <ChevronDown className={cn('size-4 text-text-muted transition-transform duration-200', isOpen && 'rotate-180')} />
       </button>
 
-      {/* Popover Menu */}
       {isOpen && (
         <div className="absolute right-0 z-50 mt-2 w-64 origin-top-right rounded-xl border border-border bg-card p-2 shadow-xl ring-1 ring-black/5 animate-in fade-in-80 zoom-in-95">
           <div className="space-y-1">
@@ -56,12 +53,12 @@ export default function SortSelect({ options, value, onChange }: SortSelectProps
                   className={cn(
                     'flex w-full items-center justify-between rounded-xl px-3.5 py-2.5 text-left text-sm transition-colors cursor-pointer',
                     isSelected
-                      ? 'bg-primary/10 font-medium text-primary'
+                      ? 'bg-primary-vivid/15 font-semibold text-primary-vivid'
                       : 'text-foreground hover:bg-accent'
                   )}
                 >
                   <span>{opt.label}</span>
-                  {isSelected && <Check className="size-4 text-primary" />}
+                  {isSelected && <Check className="size-4 text-primary-vivid" />}
                 </button>
               );
             })}

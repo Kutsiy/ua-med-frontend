@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useMemo, useState, useEffect } from "react";
-import { Search, SlidersHorizontal, X, Inbox, Pill, Stethoscope } from "lucide-react";
+import { Search, SlidersHorizontal, X, Inbox, Pill, Stethoscope, RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -64,7 +64,6 @@ export default function SearchResults() {
       />
 
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        {/* Tabs */}
         <div className="mb-4 inline-flex rounded-xl border border-border bg-card p-1">
           {TABS.map((tItem) => {
             const active = tab === tItem.value;
@@ -87,7 +86,6 @@ export default function SearchResults() {
           })}
         </div>
 
-        {/* Search + sort + mobile filters */}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-text-muted" />
@@ -122,20 +120,22 @@ export default function SearchResults() {
           </Button>
         </div>
 
-        {/* Active chips */}
         <div className="mt-4">
           <FilterChips config={config} state={state} update={update} onClear={handleReset} />
         </div>
 
-        {/* Layout */}
         <div className="mt-5 grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr] items-start">
-          {/* Desktop sidebar */}
-          <aside className="hidden lg:block">
+          <aside className="hidden lg:block sticky top-5 max-h-[calc(100vh-2.5rem)] overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <div className="rounded-xl border border-border bg-card p-4">
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="text-sm font-semibold text-foreground">{t('filters')}</h3>
                 {activeCount > 0 && (
-                  <button onClick={handleReset} className="text-xs font-medium text-primary hover:text-primary/80 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={handleReset}
+                    className="inline-flex items-center gap-1 rounded-full border border-primary-vivid/35 bg-primary-vivid/15 px-2.5 py-1 text-xs font-semibold text-primary-vivid hover:bg-primary-vivid/25 hover:border-primary-vivid/50 transition-all cursor-pointer shadow-xs"
+                  >
+                    <RotateCcw className="size-3" />
                     {t('reset')}
                   </button>
                 )}
@@ -144,7 +144,6 @@ export default function SearchResults() {
             </div>
           </aside>
 
-          {/* Results */}
           <div>
             <p className="mb-3 text-sm text-text-muted">
               {t('found')} <span className="font-semibold text-foreground">{results.length}</span>
@@ -184,7 +183,6 @@ export default function SearchResults() {
         </div>
       </div>
 
-      {/* Mobile drawer */}
       <FilterDrawer
         open={drawerOpen}
         onOpenChange={setDrawerOpen}
